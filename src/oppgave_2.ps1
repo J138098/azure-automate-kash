@@ -6,4 +6,5 @@ param (
 )
 
 # Hva er forskjell mellom '' og "" som begge er streng?
+#Ryddet opp
 Write-Host "... Hei $Navn"
