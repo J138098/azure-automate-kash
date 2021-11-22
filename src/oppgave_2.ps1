@@ -6,5 +6,4 @@ param (
 )
 
 # Hva er forskjell mellom '' og "" som begge er streng?
-Write-Host '... Hei'
-Write-Host "... $Navn!"
+Write-Host "... Hei $Navn"
