@@ -49,13 +49,11 @@ function sumPoengKortstokk {
 }
 
 Write-Output "Poengsum: $(sumPoengKortstokk -kortstokk $kortstokk)"
-<# function skrivUtResultat {
-    param (
-        [string]        
+function skrivUtResultat {
+    [OutputType([String])]
+    param (      
         [object[]]$kortstokk
-             
     )
-} #>
 
 $meg = $kortstokk[0..1]
 $kortstokk = $kortstokk[2..$kortstokk.Count]
@@ -87,3 +85,6 @@ elseif ($minsum -eq $blackjack -and $magnussum -eq $blackjack) {
 Write-Host "Vinner : $vinner"
 Write-Host "Magnus : $magnussum  | $(kortstokkTilStreng -kortstokk $magnus)"
 Write-Host "Meg : $minsum | $(kortstokkTilStreng -kortstokk $meg)" 
+}
+
+skrivUtResultat -kortstokk $kortstokk
