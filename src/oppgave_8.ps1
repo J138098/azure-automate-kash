@@ -63,8 +63,6 @@ $kortstokk = $kortstokk[2..$kortstokk.Count]
 $minsum = $(sumPoengKortstokk -kortstokk $meg)
 $magnussum = $(sumPoengKortstokk -kortstokk $magnus)
 
-$poengsum = $minsum + $magnussum
-
 
 # bruker 'blackjack' som et begrep - er 21
 $blackjack = 21
