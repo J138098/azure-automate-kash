@@ -20,7 +20,7 @@ jobs:
       - name: 'Run cleanup script'
         uses: azure/powershell@v1
         with:
-          inlineScript: .\funcApp\cleanup.ps1
+          inlineScript: .\funcApp\cleanup.ps1 -resourceGroupName 'kashmira-workshop-yut7tgvcxu7sg'
           azPSVersion: "latest"
 
       - name: 'logout from azure'
